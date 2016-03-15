@@ -14,7 +14,8 @@ npm install
 echo "npm install done."
 
 
-node main.js > out/geonamesjp_vs_geolod.nt 2> out/geonamesjp_vs_geolod.err.nt
+node main.js > out/geonamesjp_vs_geolod.nt
+# 2> out/geonamesjp_vs_geolod.err.nt
 
 echo "main done."
 
