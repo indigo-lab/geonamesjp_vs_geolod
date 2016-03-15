@@ -1,23 +1,13 @@
 #!/bin/bash
 set -e
 
-echo "hello"
-
 rm -rf out || exit 0;
-
-echo "delete out done."
 
 mkdir out;
 
 npm install
 
-echo "npm install done."
-
-
-node main.js > out/geonamesjp_vs_geolod.nt
-# 2> out/geonamesjp_vs_geolod.err.nt
-
-echo "main done."
+node main.js > out/geonamesjp_vs_geolod.nt 2> out/geonamesjp_vs_geolod.err.nt
 
 # go to the out directory and create a *new* Git repo
 cd out
@@ -29,6 +19,6 @@ git config user.email "indigo-lab@users.noreply.github.com"
 
 git add .
 git commit -m "Deploy to GitHub Pages"
-# git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 
-git push "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+# git push "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
