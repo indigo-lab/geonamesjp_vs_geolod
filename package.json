@@ -1,0 +1,22 @@
+{
+  "name": "geonamesjp_vs_geolod",
+  "version": "1.0.0",
+  "description": "linkset between geonamesjp and geolod",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indigo-lab/geonamesjp_vs_geolod.git"
+  },
+  "author": "indigo-lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indigo-lab/geonamesjp_vs_geolod/issues"
+  },
+  "homepage": "https://github.com/indigo-lab/geonamesjp_vs_geolod#readme",
+  "dependencies": {
+    "n3": "^0.4.5"
+  }
+}
