@@ -1,11 +1,22 @@
 #!/bin/bash
 set -e
 
+echo "hello"
+
 rm -rf out || exit 0;
+
+echo "delete out done."
+
 mkdir out;
 
 npm install
+
+echo "npm install done."
+
+
 node main.js > out/geonamesjp_vs_geolod.nt 2> out/geonamesjp_vs_geolod.err.nt
+
+echo "main done."
 
 # go to the out directory and create a *new* Git repo
 cd out
