@@ -7,7 +7,7 @@ mkdir out;
 
 npm install
 
-node main.js > out/geonamesjp_vs_geolod.nt 2> out/geonamesjp_vs_geolod.err.nt
+node main.js > out/geonamesjp_vs_geolod.nt.txt 2> out/geonamesjp_vs_geolod.err.nt.txt
 
 # go to the out directory and create a *new* Git repo
 cd out

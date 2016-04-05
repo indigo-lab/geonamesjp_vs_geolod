@@ -7,12 +7,12 @@ GeoNames.jp と GeoNLP LOD Server のインスタンスの関係を owl:sameAs �
 ## How to
 
     npm install
-    node main.js > geonamejp_vs_geolod.nt 2> geonamesjp_vs_geolod.err.nt
+    node main.js > geonamejp_vs_geolod.nt.txt 2> geonamesjp_vs_geolod.err.nt.txt
 
 ## Note
 
 Travis CI による自動ビルドの結果を gh-pages にホストしています。 ビルドが成功している場合は以下の URL からリンクセットを取得することができます。
 
-* <http://indigo-lab.github.io/geonamesjp_vs_geolod/geonamesjp_vs_geolod.nt>
+* <http://indigo-lab.github.io/geonamesjp_vs_geolod/geonamesjp_vs_geolod.nt.txt>
 
 [![Build Status](https://travis-ci.org/indigo-lab/geonamesjp_vs_geolod.svg?branch=master)](https://travis-ci.org/indigo-lab/geonamesjp_vs_geolod)
