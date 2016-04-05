@@ -7,7 +7,19 @@ mkdir out;
 
 npm install
 
-node main.js > out/geonamesjp_vs_geolod.nt.txt 2> out/geonamesjp_vs_geolod.err.nt.txt
+cat << EOS > out/geonamesjp_vs_geolod.nt.txt
+# Copyright (c) 2016 Indigo Corp. Research and Development Center
+#
+# このデータはクリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンスの下に提供されています。
+# <https://creativecommons.org/licenses/by-sa/4.0/deed.ja>
+#
+# このデータは Geo LOD SPARQLエンドポイント の出力を加工して作成されました。
+# <http://geolod.ex.nii.ac.jp/>
+#
+
+EOS
+
+node main.js >> out/geonamesjp_vs_geolod.nt.txt 2> out/geonamesjp_vs_geolod.err.nt.txt
 
 # go to the out directory and create a *new* Git repo
 cd out
