@@ -48,7 +48,7 @@ Promise.all([geolod, dbpedia]).then(function(a) {
     var gnjp = dbpedia2gnjp[dbpedia];
     var geolod = dbpedia2geolod[dbpedia];
     if (gnjp)
-      console.log("<" + gnjp + "> <http://www.w3.org/2002/07/owl#sameAs> <" + geolod + "> .");
+      console.log("<" + gnjp + "> <https://www.w3.org/2000/01/rdf-schema#seeAlso> <" + geolod + "> .");
   }
 
   for (var dbpedia in dbpedia2gnjp) {
